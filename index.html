@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="abarisic1509">
+        <meta name="description" content="Simple color scheme generator based on TheColor API">
+        <title>Scrimba Solo Project | Color scheme generator</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Blaka&family=Lato:wght@300;400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1>Color scheme <span>generator</span></h1>
+        </header>
+        <main class="main-container flex">
+            <div class="color-picker flex">
+                <form id="color-picker-form">
+                    <div class="form-wrapper flex">
+                        <input type="color" value="#af045a" id="color-chooser">
+                        <select name="color-mode" id="color-mode">
+                            <option value="monochrome">Monochrome</option>
+                            <option value="monochrome-dark">Monochrome-dark</option>
+                            <option value="monochrome-light">Monochrome-light</option>
+                            <option value="analogic">Analogic</option>
+                            <option value="complement">Complement</option>
+                            <option value="analogic-complement">Analogic-complement</option>
+                            <option value="triad">Triad</option>
+                        </select>
+                        <button type="submit">Get color scheme</button>
+                    </div>
+                </form>
+                <div class="results grid">
+                   
+                </div>
+            </div>
+        </main>
+        <script src="index.js"></script>
+    </body>
+</html>

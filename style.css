@@ -1,0 +1,117 @@
+/*global*/
+html, body {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #e6e6e6;
+    color: #0c0c0c;
+    font-family: 'Lato', sans-serif;
+    font-size: .925rem;
+    font-weight: 300;
+}
+
+h1 {
+    font-family: 'Blaka', cursive;
+    font-size: 2.9rem;
+    letter-spacing: 3px;
+    text-align: center;
+    color: #af045a;
+}
+h1 span {
+    font-family: 'Lato', sans-serif;
+    font-size: 2.3rem;
+    font-weight: 400;
+    color: #0c0c0c;
+}
+button,
+input,
+select {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    border: none;
+    background: transparent;
+}
+
+/* Utilities */
+.flex {
+    display: flex;
+}
+.grid {
+    display: grid;
+}
+
+/* Layout */
+.main-container,
+.color-picker {
+    align-items: center;
+    justify-content: center;
+}
+.color-picker {
+    width: 90vw;
+    max-width: 950px;
+    flex-direction: column;
+    gap: 1em;
+}
+#color-picker-form {
+    display: block;
+    width: 100%;
+    border: 1px solid #808080;
+}
+.form-wrapper {
+    max-width: 100%;
+    padding: 1.5em 1em;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+.results {
+    width: 100%;
+    min-height: 70vh;
+    grid-template-columns: 1fr;
+    
+}
+.result-wrapper {
+    align-items: center;
+    gap: 2em;
+}
+.color-box {
+    width: calc(100% - 7em);
+    height: 100%;
+}
+
+/* Form styles */
+input[type="color"] {
+    min-height: 3rem;
+}
+#color-mode {
+    padding: .7em .4em;
+    border: 1px solid #808080;
+}
+button[type="submit"] {
+    background-color: #af045a;
+    color: #fff;
+    padding: .7em 1em;
+    cursor: pointer;
+    transition: all .25s ease;
+}
+button[type="submit"]:hover,
+button[type="submit"]:focus {
+    background: transparent;
+    border: 3px solid #af045a;
+    color: #0c0c0c;
+}
+
+@media (min-width: 47em) {
+    .results {
+        grid-template-columns: repeat(5, 1fr);
+    }
+    .result-wrapper {
+        flex-direction: column;
+    }
+    .color-box {
+        width: 100%;
+    }
+}
